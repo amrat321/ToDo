@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+   <link rel="stylesheet" href="javaScript.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<!-- <div>
+    <h1 id="h" class="h1" style="font-size: 40px;" onmouseover="fun()" onmouseout="out()">Hello boys i Amar</h1>
+</div>
+     -->
+
+     <!-- <input type="button" value="click" onclick="more()">
+     <div id="more1"> 
+     </div> -->
+<!-- <div id="up"> -->
+
+<h1 id="todo">ToDo App</h1>
+<div id="up">
+<div id="div"></div>    
+</div>
+<!-- </div> -->
+</body>
+<script>
+var main =document.getElementById("div");
+var ht = document.createElement("div");
+ht.setAttribute("id", "div1");
+main.appendChild(ht);
+   
+var inp = document.createElement("input");
+inp.setAttribute("type", "text");
+inp.setAttribute("class", "form-control");
+inp.setAttribute("size", "20");
+inp.setAttribute("id", "input1");
+inp.setAttribute("placeholder", "Enter some text........");
+ht.appendChild(inp);
+
+var btn = document.createElement("input");
+btn.setAttribute("type", "button");
+btn.setAttribute("class", "btn btn-outline-primary");
+btn.setAttribute("id", "btn2");
+btn.setAttribute("value", "Add");
+btn.setAttribute("onclick", "func()");
+ht.appendChild(btn);
+
+function func(){
+if(document.getElementById("input1").value === ""){
+alert("plz fill the box");
+}
+else{
+var new2 = document.createElement("div");
+new2.setAttribute("id", "func_data");
+var ul = document.createElement("ul");
+ul.setAttribute("id","ul");
+var li = document.createElement("li");
+li.setAttribute("class", "li");
+var hard = document.createTextNode(document.getElementById("input1").value);
+li.setAttribute("id", document.getElementById("input1").value);
+li.appendChild(hard);
+ul.appendChild(li);
+new2.appendChild(ul);
+main.appendChild(new2);
+main.appendChild(ul)
+
+ 
+
+var button = document.createElement("button");
+button.setAttribute("class", "btn btn-success");
+button.setAttribute("id", "del");
+var edt = document.createTextNode("Edit");
+button.appendChild(edt);
+li.appendChild(button);
+button.addEventListener('click', function () {
+var li = this.parentNode;
+console.log("li",li);
+var text = prompt("enter value",li.id);
+console.log("text",text);
+li.innerText = text;
+li.appendChild(button);
+li.appendChild(button2);
+
+});
+    
+
+var button2 = document.createElement("button");
+button2.setAttribute("class", "btn btn-danger");
+var edt = document.createTextNode("Delete");
+button2.appendChild(edt);
+li.appendChild(button2);
+button2.addEventListener("click", function () {
+    button2.parentNode.remove()
+})
+ 
+
+}
+
+var end = document.getElementById("input1").value = "";
+
+}
+
+
+
+
+
+
+//  var id = document.getElementById("more1");
+//  var pra = document.createElement("p");
+//  var pra2 = document.createTextNode("hello");
+//  function more(){
+//      pra.appendChild(pra2);
+//      more1.appendChild(pra);
+//  }
+    
+// function fun(){
+//     document.getElementById("h").className += " h3";
+// }
+// function out(){
+//     document.getElementById("h").className += " h4";
+// }
+
+</script>
+</html>

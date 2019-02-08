@@ -1,0 +1,77 @@
+/* .h1{
+    border: 2px solid black;
+    display: inline;
+    margin-left: 500px;
+  padding: 20px;
+  font-size: 60px;
+}
+.h3{
+    background-color: green;
+    color: red;
+    font-size: 10px;
+}
+.h4{
+    background-color: white;
+    color: black;
+    font-size: 20px
+} */
+
+/* #up{
+    background-color: red;
+    padding-bottom: 30px;
+} */
+
+#div1{
+    border: 1px solid  white;
+    /* display: inline; */
+    padding: 40px;
+    margin-right: 300px;
+    margin-left: 300px; 
+    border-radius: 10px
+   
+}
+body{
+    background-image: url("backgrounds-blank-blue-953214.jpg")
+}
+#uper_Div{
+    border: 2px solid black;
+}
+#todo{
+    text-align: center;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+}
+#div1:hover{
+    background-color:rgb(194, 198, 201);
+   
+}
+ #input1{
+     margin-bottom: 20px;
+} 
+#func_data{
+    margin-top: 4%;
+}
+/* #ul{
+    display: inline-block;
+} */
+#del{
+margin-right: 10px;
+margin-left: 20px
+}
+.li{
+    border: 1px solid  white;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 255px;
+    margin-right: 300px;
+    padding: 10px;
+    color: white;
+}
+.li:hover{
+    background-color:  gainsboro;
+    color: black;
+}
+#up{
+    /* border: 2px solid white; */
+}
